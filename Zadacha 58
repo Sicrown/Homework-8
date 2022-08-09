@@ -1,0 +1,58 @@
+using System;
+
+namespace Project
+{
+	class programm
+	{
+		static void Main(string[] args)
+		{ 
+			
+
+				void Zadacha58()
+				{
+							int rows = 4;
+							int columns = 4;
+							int [,] array = new int[rows, columns];
+
+							int index_i = 0;
+							int index_j = 0;
+
+							int change_i = 0;
+							int change_j = 1;
+
+					
+							int steps = columns;
+							int turnCount= 0;
+
+							for (int i = 1; i <= array.Length; i++)
+							{
+								array[index_i, index_j] = i;
+								Console.Write(array[index_i, index_j]+ "\t");
+								steps --;
+								if (steps == 0)
+								{
+									steps = rows - 1 - turnCount/2;
+
+									int temp = change_i;
+									index_i = change_j;
+									index_j = -temp;
+									turnCount++;
+								}
+
+								index_i += change_i;
+								index_j += change_j;
+							}
+							Console.WriteLine();
+							
+
+							
+
+
+
+
+				}
+
+				Zadacha58();		
+		}
+	}
+}
