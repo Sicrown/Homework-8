@@ -59,7 +59,7 @@ namespace Project
 					}
 				}
 				Console.WriteLine();
-				Console.WriteLine($"Минимальная сумма находится в строке {sumMinIndex-1 )
+				Console.WriteLine($"Минимальная сумма находится в строке {sumMinIndex + 1} и равна {sumMin}");
 				
 				
 		
@@ -103,3 +103,4 @@ namespace Project
 		}
 	}
 }
+
